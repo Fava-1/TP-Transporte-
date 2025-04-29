@@ -22,7 +22,7 @@ public class Test {
 							auto.agregarDestino(destino);
 							camion.agregarDestino(destino);
 
-							System.out.print("¿Desea ingresar otro destino? (s/n):");
+							System.out.print("Desea ingresar otro destino? (s/n):");
 							seguirDestinos = scanner.nextLine();
 
 							} while (seguirDestinos.equalsIgnoreCase("s"));
