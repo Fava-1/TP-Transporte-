@@ -33,7 +33,7 @@ public class Paquete {
 		return peso;
 	}
 
-	public double getVolumen() {			//Calcular volumen ya hace esto pero me olvide de sacar esta parte//
+	public double getVolumen() {			//Calcular volumen ya hace esto pero me olvide de sacar esta parte y ya esta implementado en las otra clases//
 		return calcularVolumen();
 	}
 	
