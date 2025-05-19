@@ -8,11 +8,11 @@ public class BicicletaTest {
 
 	@Test
 	public void queLaBicicletaRechacePaquetePesado() {
-			 	Bicicletas bici = new Bicicletas();
+			 Bicicletas bici = new Bicicletas();
 			 	
-			 	Paquete pesado = new Paquete(0.25, 0.25 ,0.2 , 16, "Lanus");
+			 Paquete pesado = new Paquete(0.25, 0.25 ,0.2 , 16, "Lanus");
 			 	
-			 	assertFalse(bici.puedeTransportar(pesado));
+			 assertFalse(bici.puedeTransportar(pesado));
 		 }
 	@Test
 	public void queLaBiciPuedaTransportarDosPaquetesValidosDelMismoDestino() {

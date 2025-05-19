@@ -6,7 +6,6 @@ public class Bicicletas extends Transporte {
 	
 	public Bicicletas() {
 		super (0.125, 15);
-		this.destino = new String[1]; //Solo usa una ciudad//
 		
 
 	}
@@ -19,21 +18,21 @@ public class Bicicletas extends Transporte {
 			if (paquete.getVolumen() > getCapVolumen() || paquete.getPeso() > getCapPeso()) {
 				return false;
 		}
-			if (destino[0] == null) {
-				destino[0] = paquete.getDestino();
-			}
+			 if (destinos.isEmpty()) {
+		            destinos.add(paquete.getDestino());
+		        }
 			
-			if (!destino[0].equals(paquete.getDestino())) {
-				return false;
-			}
+			  if (!destinos.contains(paquete.getDestino())) {
+		            return false;
+		        }
 			
 			cantidadDePaquetes++;
 			return true;
 	}
 	
 	public void agregarDestino(String destino) {
-        if (this.destino[0] == null) {
-            this.destino[0] = destino;
-        } 
+		if (destinos.isEmpty()) {
+            destinos.add(destino);
+        }
 	}
 }
